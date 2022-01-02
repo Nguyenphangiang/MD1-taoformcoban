@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+</head>
+<style>
+    .aaa {
+        background-color: red;
+        color: white;
+    }
+    .myDiv{
+        border: 20px outset lightskyblue;
+        text-align: center;
+    }
+    .bbb{
+        background-color: lightskyblue;
+        color: blue;
+    }
+    .table{
+        background-color: yellow;
+    }
+</style>
+<body>
+<form action="">
+    <div class="myDiv">
+<table>
+    <tr>
+        <th colspan="5" class="aaa">SỞ THÍCH CỦA BẠN</th>
+    </tr>
+    <tr>
+        <td style="color:blue">Họ và Tên</td>
+        <td><input type="text" name="yourname" value="yourname"></td>
+    </tr>
+    <tr>
+        <td style="color:blue">Email</td>
+        <td><input type="text" name="email" value="email"></td>
+    </tr>
+    <table>
+        <tr>
+            <td rowspan="3" style="color:blue">Sở thích</td>
+            <td style="color:orange"><input type="checkbox" name="hobby">Thể Thao</td>
+            <td style="color:orange"><input type="checkbox">Âm Nhạc</td>
+            <td style="color:orange"><input type="checkbox">Đọc Sách</td>
+        </tr>
+        <tr>
+
+            <td style="color:orange"><input type="checkbox">Lướt web</td>
+            <td style="color:orange"><input type="checkbox">Chơi game</td>
+            <td style="color:orange"><input type="checkbox">Điện ảnh</td>
+        </tr>
+        <tr>
+            <td style="color:orange"><input type="checkbox">Du lịch</td>
+
+        </tr>
+    </table>
+        <tr>
+            <td><input type="button" value="Gửi thông tin"><input type="reset" value="Nhập lại"></td>
+        </tr>
+</table>
+
+    </div>
+</form>
+</fieldset>
+<form action="">
+    <table class="table">
+        <tr>
+            <td class="bbb" colspan="2">ĐĂNG KÝ HỌC VIÊN</td>
+            <th></th>
+        </tr>
+        <tr>
+            <th><label for="name" style="color: blue">Họ và Tên</label></th>
+            <th><input type="text" name="name" id="name"></th>
+        </tr>
+        <tr>
+            <th><label for="ngaysinh" style="color: blue">Ngày Sinh</label></th>
+            <th><input type="text" name="ngaysinh" id="ngaysinh"></th>
+        </tr>
+        <tr>
+            <th><label for="gioitinh" style="color: blue">Giới Tính</label></th>
+            <th id="gioitinh"><input type="checkbox">Nam <input type="checkbox">Nữ</th>
+        </tr>
+        <tr>
+            <th><label for="diachi" style="color: blue">Địa Chỉ</label></th>
+            <th><textarea name="diachi" id="diachi"></textarea></th>
+        </tr>
+        <tr>
+            <th><label for="lop" style="color: blue">Lớp</label></th>
+            <th><select name="lop" id="lop">
+                <option value="1">-Chọn Lớp-</option>
+                <option value="2">C1221H1</option>
+                <option value="3">C1221H2</option>
+                <option value="4">C1221H3</option>
+            </select></th>
+        </tr>
+        <tr>
+            <th><label for="email" style="color: blue">Email</label></th>
+            <th><input type="text" name="email" id="email"></th>
+        </tr>
+        <tr>
+            <th><label for="dienthoai" style="color: blue">Điện Thoại</label></th>
+            <th><input type="text" name="dienthoai" id="dienthoai"></th>
+        </tr>
+        <tr>
+            <th></th>
+            <th><input type="submit" value="Nhập lại"><input type="reset"></th>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
